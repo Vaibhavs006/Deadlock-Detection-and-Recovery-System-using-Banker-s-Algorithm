@@ -1,0 +1,137 @@
+╔════════════════════════════════════════════════════════╗
+║     Deadlock Detection & Recovery System - Log        ║
+╚════════════════════════════════════════════════════════╝
+Session started: Tue Feb 10 03:56:29 2026
+
+[03:56:29] ℹ [INFO] Deadlock Detection System started
+[03:56:29] ℹ [INFO] Loaded default test case
+[03:59:36] ℹ [INFO] Manual system data entered
+
+┌─────────────────────────────────────────────┐
+│ Operation: Data Entry                       │
+└─────────────────────────────────────────────┘
+Processes: 4 | Resources: 3
+
+Allocation Matrix:
+  v       :  3  0  0 
+  vs      :  1  1  0 
+  vvs     :  5  1  2 
+  vvvs    :  3  2  1 
+
+Max Matrix:
+  v       :  3  5  3 
+  vs      :  0  1  0 
+  vvs     : 232 3333  2 
+  vvvs    : 323 32 23 
+
+Need Matrix:
+  v       :  0  5  3 
+  vs      :  0  0  0 
+  vvs     : 227 3332  0 
+  vvvs    : 320 30 22 
+
+Available: 2 3 2 
+
+✗ Status: UNSAFE (Deadlock detected)
+─────────────────────────────────────────────
+
+
+┌─────────────────────────────────────────────┐
+│ Operation: View System State                │
+└─────────────────────────────────────────────┘
+Processes: 4 | Resources: 3
+
+Allocation Matrix:
+  v       :  3  0  0 
+  vs      :  1  1  0 
+  vvs     :  5  1  2 
+  vvvs    :  3  2  1 
+
+Max Matrix:
+  v       :  3  5  3 
+  vs      :  0  1  0 
+  vvs     : 232 3333  2 
+  vvvs    : 323 32 23 
+
+Need Matrix:
+  v       :  0  5  3 
+  vs      :  0  0  0 
+  vvs     : 227 3332  0 
+  vvvs    : 320 30 22 
+
+Available: 2 3 2 
+
+✗ Status: UNSAFE (Deadlock detected)
+─────────────────────────────────────────────
+
+[03:59:49] ⚠ [WARN] Deadlock detected - system is unsafe
+
+┌─────────────────────────────────────────────┐
+│ Operation: Safety Check                     │
+└─────────────────────────────────────────────┘
+Processes: 4 | Resources: 3
+
+Allocation Matrix:
+  v       :  3  0  0 
+  vs      :  1  1  0 
+  vvs     :  5  1  2 
+  vvvs    :  3  2  1 
+
+Max Matrix:
+  v       :  3  5  3 
+  vs      :  0  1  0 
+  vvs     : 232 3333  2 
+  vvvs    : 323 32 23 
+
+Need Matrix:
+  v       :  0  5  3 
+  vs      :  0  0  0 
+  vvs     : 227 3332  0 
+  vvvs    : 320 30 22 
+
+Available: 2 3 2 
+
+✗ Status: UNSAFE (Deadlock detected)
+─────────────────────────────────────────────
+
+
+┌─────── Performance Metrics ───────┐
+│ Execution Time:        829 ns   │
+│              =      0.829 µs   │
+│ Iterations:              2      │
+│ Complexity:     O(m × n²)       │
+└───────────────────────────────────┘
+
+[04:00:00] ⚠ [WARN] Terminating victim process: vvs
+[04:00:00] ✗ [ERROR] Deadlock recovery failed
+
+┌─────────────────────────────────────────────┐
+│ Operation: Deadlock Recovery                │
+└─────────────────────────────────────────────┘
+Processes: 3 | Resources: 3
+
+Allocation Matrix:
+  v       :  3  0  0 
+  vs      :  1  1  0 
+  vvvs    :  3  2  1 
+
+Max Matrix:
+  v       :  3  5  3 
+  vs      :  0  1  0 
+  vvvs    : 323 32 23 
+
+Need Matrix:
+  v       :  0  5  3 
+  vs      :  0  0  0 
+  vvvs    : 320 30 22 
+
+Available: 7 4 4 
+
+✗ Status: UNSAFE (Deadlock detected)
+─────────────────────────────────────────────
+
+[04:00:10] ℹ [INFO] System shutdown - normal exit
+
+════════════════════════════════════════════════════════
+Session ended: Tue Feb 10 04:00:10 2026
+════════════════════════════════════════════════════════

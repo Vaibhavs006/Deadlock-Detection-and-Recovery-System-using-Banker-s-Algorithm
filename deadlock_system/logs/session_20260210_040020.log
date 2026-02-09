@@ -1,0 +1,7 @@
+╔════════════════════════════════════════════════════════╗
+║     Deadlock Detection & Recovery System - Log        ║
+╚════════════════════════════════════════════════════════╝
+Session started: Tue Feb 10 04:00:20 2026
+
+[04:00:20] ℹ [INFO] Deadlock Detection System started
+[04:00:20] ℹ [INFO] Loaded default test case
