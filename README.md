@@ -233,23 +233,6 @@ Contributions are welcome! Please:
 This project is licensed under the MIT License - see [LICENSE](LICENSE) for details.
 
 ---
-
-## 👨‍💻 Author
-
-**Your Name**  
-Computer Science Engineering Student  
-[GitHub](https://github.com/yourusername) | [LinkedIn](https://linkedin.com/in/yourprofile) | [Email](mailto:your.email@example.com)
-
----
-
-## 🙏 Acknowledgments
-
-- **Textbook Reference**: *Operating System Concepts* by Silberschatz, Galvin, Gagne
-- **Algorithm**: E.W. Dijkstra's Banker's Algorithm (1965)
-- **UI Library**: GNU ncurses
-
----
-
 ## 📚 References
 
 1. Silberschatz, A., Galvin, P. B., & Gagne, G. (2018). *Operating System Concepts* (10th ed.)
